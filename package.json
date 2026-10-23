@@ -1,0 +1,10 @@
+{
+  "name": "imd-legal-register",
+  "version": "1.1.0",
+  "description": "IMD Legal Section — case register, hearings, orders, preemptive actions and ready reference",
+  "main": "server.js",
+  "private": true,
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" },
+  "license": "UNLICENSED"
+}

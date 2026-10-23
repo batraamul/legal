@@ -1,0 +1,5 @@
+data/
+docker-compose.override.yml
+*.tar
+*.zip
+node_modules/

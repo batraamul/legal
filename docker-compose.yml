@@ -1,0 +1,21 @@
+# Start:   docker compose up -d --build
+# Open:    http://<server-address>:1875     (login: legal / legal_imd)
+services:
+  imd-legal-register:
+    build: .
+    image: imd-legal-register:1.1.0
+    container_name: imd-legal-register
+    ports:
+      - "1875:1875"            # change the left number to use another port on the server
+    environment:
+      LEGAL_USER: legal
+      LEGAL_PASS: legal_imd     # change this before going live
+      TZ: Asia/Kolkata
+      SESSION_HOURS: "12"
+      KEEP_BACKUPS: "120"
+    volumes:
+      - legal-data:/data        # the register (imd-legal-register.json) and backups/
+    restart: unless-stopped
+
+volumes:
+  legal-data:

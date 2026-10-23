@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Legal Register — IMD Legal Section</title>
+<link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+<main class="desk">
+  <form class="cover" id="login" autocomplete="on">
+    <svg class="emb" viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0d68e"/><stop offset=".55" stop-color="#c9a24a"/><stop offset="1" stop-color="#8a6a26"/></linearGradient></defs>
+      <g fill="none" stroke="url(#g)" stroke-linecap="round" stroke-linejoin="round"><circle cx="60" cy="60" r="56" stroke-width="2.5"/><circle cx="60" cy="60" r="50" stroke-width="1" stroke-dasharray="2 3"/>
+      <path d="M44 34a8 8 0 0 1 7.5-8 10.5 10.5 0 0 1 19.5 2.5 6.5 6.5 0 0 1 4 12.5H45a6.5 6.5 0 0 1-1-7z" stroke-width="2.4"/><path d="M52 47l-2 5M60 47l-2 5M68 47l-2 5" stroke-width="2"/>
+      <path d="M60 52v40M47 94h26M50 98h20M30 60h60" stroke-width="3"/><circle cx="60" cy="59" r="3" stroke-width="2.4"/>
+      <path d="M32 60l-9 17M32 60l9 17M19 77a13 6 0 0 0 26 0z" stroke-width="2.2"/><path d="M88 60l-9 17M88 60l9 17M75 77a13 6 0 0 0 26 0z" stroke-width="2.2"/></g></svg>
+    <div class="hi">भारत मौसम विज्ञान विभाग</div>
+    <div class="en">India Meteorological Department</div>
+    <h1>Legal Register</h1>
+    <div class="sub">Legal Section · विधि अनुभाग</div>
+    <label>Username<input name="username" id="u" autocomplete="username" required autofocus></label>
+    <label>Password<input name="password" id="p" type="password" autocomplete="current-password" required></label>
+    <label>Your name <span>(for the change log — optional)</span><input name="name" id="n" autocomplete="name" placeholder="e.g. S. Kumar, SO (Legal)"></label>
+    <div class="err" id="err" role="alert"></div>
+    <button type="submit" id="go">Open the register</button>
+    <div class="foot">Ministry of Earth Sciences · Government of India</div>
+  </form>
+</main>
+<script src="/login.js"></script>
+</body>
+</html>

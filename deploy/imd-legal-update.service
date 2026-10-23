@@ -1,0 +1,8 @@
+[Unit]
+Description=IMD Legal Register - update from GitHub
+After=network-online.target docker.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/imd-legal-register/deploy/auto-update.sh

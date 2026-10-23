@@ -1,0 +1,64 @@
+/* css/tokens.css — every colour, as variables, for each look and for light and dark paper */
+:root {
+  --serif: "Palatino Linotype", "Book Antiqua", Palatino, "URW Palladio L", Georgia, "Times New Roman", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, "Cascadia Mono", Consolas, "Liberation Mono", monospace;
+
+  /* desk and cover — Court Maroon (default look) */
+  --desk1: #2e2119; --desk2: #120c09;
+  --cv1: #6b161c; --cv2: #3e0b0f; --cv3: #250608;
+  --gold: #c9a24a; --gold-hi: #f0d68e; --gold-lo: #8a6a26;
+  --stitch: rgba(240, 214, 142, .45);
+
+  /* paper */
+  --paper: #fbf6ea; --paper2: #f3ead4; --paper3: #ece0c4;
+  --ink: #2a2118; --ink2: #5b4e3f; --ink3: #8b7c69;
+  --rule: #e2d4b6; --rule2: #cdbb94; --line: rgba(122, 88, 40, .11);
+  --margin: rgba(178, 34, 34, .28);
+  --accent: #8b1e24; --accent2: #a83a2f; --accent-ink: #fff8ec;
+  --link: #7a1d22;
+  --field: #fffdf6; --field-b: #d6c6a2;
+  --shadow: 0 1px 2px rgba(60, 35, 10, .12), 0 4px 14px rgba(60, 35, 10, .10);
+
+  /* severities */
+  --over: #b3261e; --crit: #cf4f17; --soon: #a86d10; --up: #2c5d88; --watch: #4b6b35; --done: #4a7c59;
+
+  /* side tabs */
+  --t-board: #8b1e24; --t-cases: #6d4c1f; --t-hear: #1f4e6d; --t-orders: #7b2d5c;
+  --t-notices: #2f6448; --t-counsel: #5a4a8a; --t-ref: #8a6a1d; --t-reports: #3d5560;
+
+  --chart1: #8b1e24; --chart2: #c9a24a; --chart3: #2c5d88; --chart4: #4b6b35; --chart5: #7b2d5c; --chart6: #6d4c1f;
+  color-scheme: light;
+}
+
+/* Barrister Black */
+html[data-look="black"] { --cv1: #2b2b2e; --cv2: #18181a; --cv3: #0b0b0c; --gold: #c8c8c8; --gold-hi: #f2f2f2; --gold-lo: #7a7a7a; --stitch: rgba(230,230,230,.35); --accent: #2d2d33; --accent2: #50505a; --link: #2d2d33; --t-board: #3a3a40; }
+/* Law Report Green */
+html[data-look="green"] { --cv1: #1f4a35; --cv2: #12301f; --cv3: #081a10; --accent: #1f5a3c; --accent2: #2f7650; --link: #1f5a3c; --t-board: #1f5a3c; }
+/* Navy Brief */
+html[data-look="navy"] { --cv1: #1c2f55; --cv2: #111d38; --cv3: #080f1f; --accent: #1f3c6e; --accent2: #2f5597; --link: #1f3c6e; --t-board: #1f3c6e; }
+/* Government File (buff manila cover with red tape) */
+html[data-look="file"] { --cv1: #c9a86b; --cv2: #a8864b; --cv3: #7f6232; --gold: #7a1d1d; --gold-hi: #9b2a24; --gold-lo: #5a1414; --stitch: rgba(122,29,29,.35); --accent: #9b2a24; --accent2: #b8402f; --link: #8a2420; --desk1: #3a2c20; --desk2: #1b130d; }
+/* Monsoon Teal (IMD weather) */
+html[data-look="teal"] { --cv1: #154e57; --cv2: #0c333a; --cv3: #051c20; --accent: #146070; --accent2: #23808f; --link: #146070; --t-board: #146070; }
+
+/* dark paper */
+html[data-dark="1"] {
+  --paper: #1f1a15; --paper2: #27201a; --paper3: #30281f;
+  --ink: #eee4d2; --ink2: #c7b89f; --ink3: #9a8b75;
+  --rule: #3c3228; --rule2: #54473a; --line: rgba(255, 236, 200, .055);
+  --margin: rgba(230, 110, 100, .25);
+  --accent-ink: #fff8ec;
+  --link: #f0a59b;
+  --field: #2a231c; --field-b: #4a3e31;
+  --shadow: 0 1px 2px rgba(0,0,0,.4), 0 6px 18px rgba(0,0,0,.35);
+  --over: #ff6b5e; --crit: #ff8c4a; --soon: #e9b44c; --up: #7fb3e6; --watch: #9cc47e; --done: #7fc396;
+  --chart1: #e0736a; --chart2: #e3c072; --chart3: #7fb3e6; --chart4: #9cc47e; --chart5: #d08bbd; --chart6: #c9a06a;
+  color-scheme: dark;
+}
+html[data-dark="1"][data-look="maroon"], html[data-dark="1"]:not([data-look]) { --accent: #b33a3f; --accent2: #c9524a; }
+html[data-dark="1"][data-look="black"] { --accent: #6a6a75; --link: #d8d8e0; }
+html[data-dark="1"][data-look="green"] { --accent: #2f7a52; --link: #9cd6b0; }
+html[data-dark="1"][data-look="navy"] { --accent: #3a64a8; --link: #9fbdf0; }
+html[data-dark="1"][data-look="file"] { --accent: #b8402f; }
+html[data-dark="1"][data-look="teal"] { --accent: #23808f; --link: #8fd3dc; }

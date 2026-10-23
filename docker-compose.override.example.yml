@@ -1,0 +1,6 @@
+# Copy this file to docker-compose.override.yml on the server and put your own settings here.
+# docker-compose.override.yml is NOT in GitHub, so updates never overwrite your password.
+services:
+  imd-legal-register:
+    environment:
+      LEGAL_PASS: change-this-password
