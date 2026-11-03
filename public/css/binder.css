@@ -184,3 +184,4 @@ html[data-look="file"] .brand .bs { color: #7a1d1d; -webkit-text-fill-color: #7a
 .emerg-pill svg { width: 15px; height: 15px; }
 @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(255, 90, 70, .55); } 70% { box-shadow: 0 0 0 9px rgba(255, 90, 70, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 90, 70, 0); } }
 @media (prefers-reduced-motion: reduce) { .emerg-pill { animation: none; } }
+.emerg-pill[hidden] { display: none; }

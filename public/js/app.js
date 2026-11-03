@@ -106,7 +106,7 @@
     'clear-examples': async () => {
       const has = S.data.cases.some((c) => c.sample);
       if (has) {
-        if (!(await UI.confirm('Remove all example entries (cases, notices, RTI, counsel, fee bills and follow-ups marked “Example”)?', { ok: 'Clear examples' }))) return;
+        if (!(await UI.confirm('Remove all example entries (cases, matters, notices, counsel, fee bills and follow-ups marked “Example”)?', { ok: 'Clear examples' }))) return;
         LR.sample.clearExamples(S.data); state.caseId = null; S.commit('Cleared the example entries');
       } else { LR.sample.addExamples(S.data); S.commit('Added the example entries'); }
     },
